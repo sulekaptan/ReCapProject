@@ -10,3 +10,17 @@ C:\Users\User\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\Data
 C:\Users\User\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Users\User\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\User\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\User\Desktop\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\User\Desktop\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\User\Desktop\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\User\Desktop\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\User\Desktop\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\User\Desktop\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\User\Desktop\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\User\Desktop\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\User\Desktop\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\User\Desktop\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\User\Desktop\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\User\Desktop\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

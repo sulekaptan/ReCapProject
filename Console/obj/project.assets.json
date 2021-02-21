@@ -1472,6 +1472,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Core": "1.0.0",
           "DataAccess": "1.0.0",
           "Entities": "1.0.0"
         },
@@ -1482,10 +1483,24 @@
           "bin/placeholder/Business.dll": {}
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Core": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
         },
@@ -1499,6 +1514,9 @@
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Entities.dll": {}
         },
@@ -5687,6 +5705,11 @@
       "path": "../Business/Business.csproj",
       "msbuildProject": "../Business/Business.csproj"
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -5711,11 +5734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\ReCapProject\\Console\\ConsoleUI.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\ReCapProject\\Console\\ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "C:\\Users\\User\\source\\repos\\ReCapProject\\Console\\ConsoleUI.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\ReCapProject\\Console\\ConsoleUI.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\ReCapProject\\Console\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\ReCapProject\\Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5732,14 +5755,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\ReCapProject\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\ReCapProject\\Business\\Business.csproj"
+            "C:\\Users\\User\\Desktop\\ReCapProject\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\ReCapProject\\Business\\Business.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\User\\Desktop\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\ReCapProject\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\ReCapProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\ReCapProject\\Entities\\Entities.csproj"
+            "C:\\Users\\User\\Desktop\\ReCapProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\ReCapProject\\Entities\\Entities.csproj"
             }
           }
         }
