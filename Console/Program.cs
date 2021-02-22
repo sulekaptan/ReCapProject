@@ -11,15 +11,15 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             CarTest();
-            ColorTest();
-            BrandTest();
+            //ColorTest();
+            //BrandTest();
         }
 
         private static void BrandTest()
         {            
             Console.WriteLine("----------------BrandTest-----------------------------------------------------------------------");
             BrandManager brandManager = new BrandManager(new EfBrandDal());
-            foreach (var brand in brandManager.GetAll())
+            foreach (var brand in brandManager.GetAll().Data)
             {
                 Console.WriteLine(brand.BrandName);
             }
@@ -29,7 +29,7 @@ namespace ConsoleUI
         {
             Console.WriteLine("----------------ColorTest------------------------------------------------------------------------");
             ColorManager colorManager = new ColorManager(new EfColorDal());
-            foreach (var color in colorManager.GetAll())
+            foreach (var color in colorManager.GetAll().Data)
             {
                 Console.WriteLine(color.ColorName);
             }
@@ -39,11 +39,22 @@ namespace ConsoleUI
         {
             CarManager carManager = new CarManager(new EfCarDal());
 
-            foreach (var car in carManager.GetCarDetails())
+            var result = carManager.GetCarDetails();
+            if (result.Success == true)
             {
-                Console.WriteLine("Car Name: " + car.Name + " --- Brand Name: " + car.BrandName
-                    + " --- ColorName: " + car.ColorName + " --- Daily Price: " + car.DailyPrice);
+                foreach (var car in result.Data)
+                {
+                    Console.WriteLine("Car Name: " + car.Name + " --- Brand Name: " + car.BrandName
+                         + " --- ColorName: " + car.ColorName + " --- Daily Price: " + car.DailyPrice);
+                }
+
             }
+            else 
+            {
+                Console.WriteLine(result.Message);
+            }
+
+            
             //Console.WriteLine("------------------------------------------");
 
             //carManager.Add(new Car { Id = 14, BrandId = 112, ColorId = 21, ModelYear = 2017, DailyPrice = 400, Description = "Chevrolet Captiva" });
